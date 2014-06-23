@@ -11,17 +11,17 @@
 
 #include "cocos2d.h"
 
+using namespace cocos2d;
+
 // cocos2dx
-class TestLayer : public cocos2d::Layer
+class TestLayer : public Layer
 {
 public:
     //初期化のメソッド
     virtual bool init();
-    
-    static cocos2d::CCScene*scene();
-    
+        
     //create()を使えるようにしている。
-    //CREATE_FUNC(NewLayer);
+    CREATE_FUNC(TestLayer);
 
 };
 
